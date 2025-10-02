@@ -8,6 +8,7 @@ import {
   BarChart3,
   Building2,
   Settings,
+  Megaphone,
 } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -46,6 +47,12 @@ export default function Services() {
       title: t("services.custom.title"),
       description: t("services.custom.desc"),
       color: "netaq-neon",
+    },
+    {
+      icon: Megaphone,
+      title: t("services.marketing.title"),
+      description: t("services.marketing.desc"),
+      color: "netaq-green",
     },
   ];
 

@@ -105,6 +105,8 @@ const translations: Record<Language, Record<string, string>> = {
     "services.management.desc": "Property management services to ensure the preservation and increase of real estate asset value",
     "services.custom.title": "Custom Solutions",
     "services.custom.desc": "Tailored services designed to meet the unique needs of each client",
+    "services.marketing.title": "Real Estate Marketing",
+    "services.marketing.desc": "Comprehensive marketing campaigns to showcase and promote properties using the latest strategies",
     "services.cta": "Get Free Consultation",
     
     // Values
@@ -224,6 +226,8 @@ const translations: Record<Language, Record<string, string>> = {
     "services.management.desc": "خدمات إدارة الممتلكات لضمان الحفاظ على قيمة الأصول العقارية وزيادتها",
     "services.custom.title": "حلول مخصصة",
     "services.custom.desc": "خدمات مصممة لتلبية الاحتياجات الفريدة لكل عميل",
+    "services.marketing.title": "التسويق العقاري",
+    "services.marketing.desc": "حملات تسويقية شاملة لعرض وترويج العقارات بأحدث الاستراتيجيات والأساليب",
     "services.cta": "احصل على استشارة مجانية",
     
     // Values
