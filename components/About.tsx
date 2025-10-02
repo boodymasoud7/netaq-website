@@ -46,7 +46,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-10"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">{t("about.title")}</span>
@@ -61,7 +61,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="glass-effect rounded-3xl p-8 md:p-12 mb-16 max-w-5xl mx-auto"
+          className="glass-effect rounded-3xl p-8 md:p-12 mb-10 max-w-5xl mx-auto"
         >
           <p className="text-lg md:text-xl text-white/80 leading-relaxed text-center">
             {t("about.description")}
@@ -69,7 +69,7 @@ export default function About() {
         </motion.div>
 
         {/* Vision & Mission Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
           {/* Vision */}
           <motion.div
             className="about-card gradient-border p-8 md:p-10"
@@ -126,7 +126,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="mt-16 text-center max-w-4xl mx-auto"
+          className="mt-10 text-center max-w-4xl mx-auto"
         >
           <h3 className="text-3xl md:text-4xl font-bold mb-8 text-gradient">
             {t("about.story.title")}
