@@ -14,6 +14,8 @@ import Advantages from "@/components/Advantages";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import SEOHead from "@/components/SEOHead";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,6 +43,7 @@ export default function Home() {
 
   return (
     <LanguageProvider>
+      <SEOHead />
       <main className="relative">
         <Navigation />
         <Hero />
@@ -52,6 +55,7 @@ export default function Home() {
         <Advantages />
         <Partners />
         <Contact />
+        <WhatsAppButton />
       </main>
     </LanguageProvider>
   );

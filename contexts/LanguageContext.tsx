@@ -180,6 +180,16 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.cta.button": "Call Us Now",
     "contact.footer.rights": "All rights reserved.",
     "contact.footer.tagline": "Discover exceptional investment opportunities",
+    
+    // WhatsApp
+    "whatsapp.message": "Hello! I'm interested in learning more about Netaq's real estate services.",
+    "whatsapp.tooltip": "Chat with us on WhatsApp",
+    "whatsapp.label": "WhatsApp Contact Button",
+    
+    // SEO
+    "seo.title": "Netaq | Premium Real Estate Investment & Consulting in New Damietta, Egypt",
+    "seo.description": "Transform your real estate journey with Netaq. Expert consulting, investment strategies, property brokerage, and market research in New Damietta. Founded by Engineers Hesham Adel & Moataz Sherif.",
+    "seo.keywords": "real estate Egypt, property investment Damietta, real estate consulting, investment opportunities, property brokerage, market research, New Damietta, Netaq real estate",
   },
   ar: {
     // Navigation
@@ -301,6 +311,16 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.cta.button": "اتصل بنا الآن",
     "contact.footer.rights": "جميع الحقوق محفوظة.",
     "contact.footer.tagline": "اكتشف فرص استثمار استثنائية",
+    
+    // WhatsApp
+    "whatsapp.message": "مرحباً! أنا مهتم بمعرفة المزيد عن خدمات نطاق العقارية.",
+    "whatsapp.tooltip": "تواصل معنا عبر واتساب",
+    "whatsapp.label": "زر التواصل عبر واتساب",
+    
+    // SEO
+    "seo.title": "نطاق | استثمار واستشارات عقارية متميزة في دمياط الجديدة، مصر",
+    "seo.description": "حوّل رحلتك العقارية مع نطاق. استشارات خبراء، استراتيجيات استثمار، وساطة عقارية، وأبحاث سوقية في دمياط الجديدة. تأسست على يد المهندس هشام عادل والمهندس معتز شريف.",
+    "seo.keywords": "عقارات مصر, استثمار عقاري دمياط, استشارات عقارية, فرص استثمارية, وساطة عقارية, أبحاث سوقية, دمياط الجديدة, نطاق عقارات",
   },
 };
 

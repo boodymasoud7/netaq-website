@@ -16,11 +16,46 @@ export default function Contact() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [showSuccess, setShowSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    alert(t("contact.form.success"));
+    
+    try {
+      // Web3Forms API - مجاني تماماً
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // سنستبدلها في التعليمات
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          from_name: "Netaq Website Contact Form",
+          subject: `New Contact Form Submission from ${formData.name}`,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // عرض رسالة النجاح
+        setShowSuccess(true);
+        // إخفاء الرسالة بعد 5 ثواني
+        setTimeout(() => setShowSuccess(false), 5000);
+        // إعادة تعيين النموذج
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   const handleChange = (
@@ -96,6 +131,20 @@ export default function Contact() {
             <h3 className="text-3xl font-bold mb-8 text-netaq-neon">
               {t("contact.form.title")}
             </h3>
+
+            {/* Success Message */}
+            {showSuccess && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                className="mb-6 p-4 bg-netaq-neon/20 border border-netaq-neon rounded-xl"
+              >
+                <p className="text-netaq-neon font-semibold text-center">
+                  {t("contact.form.success")}
+                </p>
+              </motion.div>
+            )}
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
