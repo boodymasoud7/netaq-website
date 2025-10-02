@@ -7,7 +7,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function Partners() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const isRTL = language === "ar";
 
   // شركات التطوير العقاري
   const partners = [
@@ -48,26 +49,46 @@ export default function Partners() {
       className="relative py-16 overflow-hidden bg-gradient-to-b from-black via-netaq-green/5 to-black"
     >
       <style dangerouslySetInnerHTML={{__html: `
-        @keyframes scrollLeft {
+        @keyframes scrollLeftLTR {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
         }
         
-        @keyframes scrollRight {
+        @keyframes scrollRightLTR {
           from { transform: translateX(-50%); }
           to { transform: translateX(0); }
         }
         
-        .partners-scroll-left {
-          animation: scrollLeft 40s linear infinite;
+        @keyframes scrollLeftRTL {
+          from { transform: translateX(0); }
+          to { transform: translateX(50%); }
         }
         
-        .partners-scroll-right {
-          animation: scrollRight 40s linear infinite;
+        @keyframes scrollRightRTL {
+          from { transform: translateX(50%); }
+          to { transform: translateX(0); }
         }
         
-        .partners-scroll-left:hover,
-        .partners-scroll-right:hover {
+        .partners-scroll-1-ltr {
+          animation: scrollLeftLTR 40s linear infinite;
+        }
+        
+        .partners-scroll-2-ltr {
+          animation: scrollRightLTR 40s linear infinite;
+        }
+        
+        .partners-scroll-1-rtl {
+          animation: scrollRightRTL 40s linear infinite;
+        }
+        
+        .partners-scroll-2-rtl {
+          animation: scrollLeftRTL 40s linear infinite;
+        }
+        
+        .partners-scroll-1-ltr:hover,
+        .partners-scroll-2-ltr:hover,
+        .partners-scroll-1-rtl:hover,
+        .partners-scroll-2-rtl:hover {
           animation-play-state: paused;
         }
       `}} />
@@ -96,7 +117,7 @@ export default function Partners() {
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
             
             <div className="overflow-hidden">
-              <div className="flex partners-scroll-left gap-6">
+              <div className={`flex gap-6 ${isRTL ? 'partners-scroll-1-rtl' : 'partners-scroll-1-ltr'}`}>
                 {[...row1, ...row1].map((partner, index) => (
                   <div key={`row1-${index}`} className="flex-shrink-0 w-48">
                     <div className="glass-effect rounded-xl p-5 h-44 flex flex-col items-center justify-between border border-white/10 bg-white/5 hover:border-netaq-neon/40 hover:bg-white/10 transition-all group">
@@ -125,7 +146,7 @@ export default function Partners() {
             <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
             
             <div className="overflow-hidden">
-              <div className="flex partners-scroll-right gap-6">
+              <div className={`flex gap-6 ${isRTL ? 'partners-scroll-2-rtl' : 'partners-scroll-2-ltr'}`}>
                 {[...row2, ...row2].map((partner, index) => (
                   <div key={`row2-${index}`} className="flex-shrink-0 w-48">
                     <div className="glass-effect rounded-xl p-5 h-44 flex flex-col items-center justify-between border border-white/10 bg-white/5 hover:border-netaq-neon/40 hover:bg-white/10 transition-all group">
