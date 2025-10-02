@@ -110,7 +110,7 @@ export default function About() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="about-card relative glass-effect rounded-3xl p-8 md:p-12 max-w-4xl mx-auto"
+          className="relative glass-effect rounded-3xl p-8 md:p-12 max-w-4xl mx-auto"
         >
           <Quote className="absolute top-8 left-8 text-netaq-neon/20" size={64} />
           <div className="relative z-10">
