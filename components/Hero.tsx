@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import gsap from "gsap";
-import { ArrowDown, Sparkles } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hero() {
@@ -91,17 +91,6 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 glass-effect rounded-full"
-          >
-            <Sparkles className="text-netaq-neon" size={20} />
-            <span className="text-sm">{t("hero.badge")}</span>
-          </motion.div>
-
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
