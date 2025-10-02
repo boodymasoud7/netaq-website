@@ -34,7 +34,7 @@ export default function Navigation() {
         isScrolled ? "glass-effect shadow-lg" : ""
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.a
