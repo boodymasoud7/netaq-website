@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Target, Eye, Quote } from "lucide-react";
+import { Target, Eye } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -104,22 +104,6 @@ export default function About() {
             </p>
           </motion.div>
         </div>
-
-        {/* Quote Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="relative glass-effect rounded-3xl p-8 md:p-12 max-w-4xl mx-auto"
-        >
-          <Quote className="absolute top-8 left-8 text-netaq-neon/20" size={64} />
-          <div className="relative z-10">
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-6 italic">
-              {t("about.quote")}
-            </p>
-            <div className="h-1 w-24 bg-gradient-to-r from-netaq-neon to-netaq-green rounded-full" />
-          </div>
-        </motion.div>
 
         {/* Story Section */}
         <motion.div

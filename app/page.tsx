@@ -7,7 +7,9 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import QuoteSection from "@/components/QuoteSection";
 import Values from "@/components/Values";
+import CTAButton from "@/components/CTAButton";
 import Advantages from "@/components/Advantages";
 import Partners from "@/components/Partners";
 import Contact from "@/components/Contact";
@@ -44,7 +46,9 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <QuoteSection />
         <Values />
+        <CTAButton />
         <Advantages />
         <Partners />
         <Contact />

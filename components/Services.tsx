@@ -127,23 +127,6 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-20 text-center"
-        >
-          <motion.a
-            href="#contact"
-            whileHover={{ scale: 1.05, boxShadow: "0 0 30px #1FEDB4" }}
-            whileTap={{ scale: 0.95 }}
-            className="inline-block px-10 py-4 bg-gradient-to-r from-netaq-neon to-netaq-green rounded-full text-black font-bold text-lg"
-          >
-{t("services.cta")}
-          </motion.a>
-        </motion.div>
       </div>
 
       {/* Decorative Orbs */}
