@@ -15,18 +15,10 @@
 
 #### **كيفية تفعيل الفورم:**
 
-1. **افتح الموقع**: [https://web3forms.com](https://web3forms.com)
-2. **أدخل البريد الإلكتروني**: `Netaqinvestmen@gmail.com`
-3. **انسخ الـ Access Key**
-4. **افتح الملف**: `components/Contact.tsx`
-5. **استبدل**: 
-   ```typescript
-   access_key: "YOUR_WEB3FORMS_ACCESS_KEY"
-   ```
-   بالـ Access Key الخاص بك:
-   ```typescript
-   access_key: "abc123xyz-your-actual-key"
-   ```
+✅ **تم التفعيل بالفعل!**
+- البريد: `Netaqinvestment@gmail.com`
+- Access Key: `c271f91d-03a2-4935-b024-709bd4876103`
+- الفورم شغال 100% ✅
 
 #### **المميزات:**
 - ✅ إرسال فعلي للرسائل على البريد
@@ -132,7 +124,7 @@ git push
 ## 📞 التواصل:
 
 - **WhatsApp**: 01006181900
-- **Email**: Netaqinvestmen@gmail.com
+- **Email**: Netaqinvestment@gmail.com
 - **الموقع**: [https://netaq-website.vercel.app](https://netaq-website.vercel.app)
 
 ---

@@ -70,7 +70,7 @@ export default function SEOHead() {
       logo: "https://netaq-website.vercel.app/logo/english.png",
       image: "https://netaq-website.vercel.app/logo/english.png",
       telephone: "+201006181900",
-      email: "Netaqinvestmen@gmail.com",
+      email: "Netaqinvestment@gmail.com",
       address: {
         "@type": "PostalAddress",
         streetAddress: "Traffic Department",

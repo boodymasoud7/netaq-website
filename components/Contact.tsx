@@ -30,7 +30,7 @@ export default function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "YOUR_WEB3FORMS_ACCESS_KEY", // سنستبدلها في التعليمات
+          access_key: "c271f91d-03a2-4935-b024-709bd4876103",
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
