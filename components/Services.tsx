@@ -64,7 +64,7 @@ export default function Services() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20"
+          className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-gradient">{t("services.title")}</span>
