@@ -45,7 +45,7 @@ export default function Partners() {
     <section
       id="partners"
       ref={sectionRef}
-      className="relative py-24 overflow-hidden bg-gradient-to-b from-black via-netaq-green/5 to-black"
+      className="relative py-16 overflow-hidden bg-gradient-to-b from-black via-netaq-green/5 to-black"
     >
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes scrollLeft {

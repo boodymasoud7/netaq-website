@@ -37,7 +37,7 @@ export default function Values() {
     <section
       id="values"
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-16 overflow-hidden"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-black" />

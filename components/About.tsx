@@ -35,7 +35,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-32 overflow-hidden"
+      className="relative py-16 overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-netaq-green/5 to-black" />
