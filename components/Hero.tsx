@@ -67,7 +67,7 @@ export default function Hero() {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-netaq-green/20 via-black to-black" />
